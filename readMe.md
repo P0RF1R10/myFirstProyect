@@ -1,7 +1,9 @@
-Sat May  4 09:33:25 CST 2024
-
-Este proyecto fue hecho con la intención de poco a poco meter las cosas que vaya recordando del curso de Frontend Developer.
-Iré construyendo una web page según lo que recuerde del curso. 
+Sat May  4 09:38:56 CST 2024
 
 
-Aparte necesitaré otro lugar para practicar esos conceptos por aparte (individualmente)
+Mi plan era apuntar todo, aun no quiero que muera por eso hago un respaldo en caso que en el futuro lo quiera retomar. 
+
+
+
+
+
