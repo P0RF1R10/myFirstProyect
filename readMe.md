@@ -5,3 +5,13 @@ Iré construyendo una web page según lo que recuerde del curso.
 
 
 Aparte necesitaré otro lugar para practicar esos conceptos por aparte (individualmente)
+
+> Tue May  7 01:20:30 CST 2024
+Sí, necesito hacer un repaso por todo los cursos ya apuntados, 
+	Guardar todo lo vital (para el futuro)
+		Y practicar.
+
+
+
+
+
