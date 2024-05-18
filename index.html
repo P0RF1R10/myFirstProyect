@@ -5,21 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Web Page</title>
     <style>
-        body {
-            background-color: rgb(2, 4, 46);
+        * {
+            margin: 0 auto;
         }
         body {
-            color: aliceblue;
+            background-color: rgb(2, 4, 46);
+            color: #EAECEE;
+        }
+        .onlynav {
+            background-color: #EAECEE;
+        }
+        header nav p {
+            color:black;
+        }
+        .questionfooter {
+            color: black;
+        }
+        footer {
+            background: white;
         }
     </style>
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="onlyheader">
+        <nav class="onlynav">
             <p>Porfirio Glez Lpz</p>
             <a href="https://github.com/P0RF1R10" target="_blank">GitHub</a>
             <a href="" target="_blank">About Me</a>
             <a href="" target="_blank">LinkedIn</a>
+            <a href="" target="_blank">Email</a>
         </nav>
     </header>
     <section class="skills">
@@ -54,7 +68,7 @@
         </ul>
     </section>
 
-    <section class="english">
+    <section class="levelEnglish">
         <p>Mi nivel de inglés es:</p>
         <ul>
             <li>Reading: B1</li>
@@ -64,10 +78,10 @@
         </ul>
     </section>
 
-
-
-    <footer>
-        <p>Aquí va información como menos importante?</p>
+    <footer class="onlyfooter">
+        <p class="questionfooter">Aquí va información como menos importante?</p>
+        <a href="" target="_blank">Facebook</a>
+        <a href="" target="_blank">Instragram</a>
     </footer>
 </body>
 </html>
