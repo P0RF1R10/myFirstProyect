@@ -18,3 +18,11 @@ Tener un acceso a los apuntes más rápido¿?
 Lo que necesite lo implemento en mi proyecto, lo que no pues se va guardado para memorizarlo en un futuro.
 
  
+> Sat May 25 18:51:40 CST 2024
+Ya que esperas wey, estas totalmente en las prácticas y cuando algo necesites lo irás a buscar en tu apuntes en archivos.
+Y si no buscarlo en internet. 
+¡Pero ya carajo! Ya estas practicando para buscar trabajo. 
+
+
+
+
