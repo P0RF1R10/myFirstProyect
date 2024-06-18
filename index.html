@@ -12,12 +12,31 @@
             background-color: rgb(2, 4, 46);
             color: #EAECEE;
         }
-        .onlynav {
-            background-color: #EAECEE;
+
+        header {
+            display: flex;
+            flex-direction: row;
+            height: 50px;
+            border: 2px solid #ffffff;
+            align-items: center; /*verticalmente*/
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            background-color: #B0BEC5;
         }
-        header nav p {
-            color:black;
+
+        header p {
+            margin-left: 10px;
+            width: 60%;
         }
+
+        .nav {
+            display: flex;
+            gap: 30px;
+        }
+
+
+
         .questionfooter {
             color: black;
         }
@@ -27,15 +46,16 @@
     </style>
 </head>
 <body>
-    <header class="onlyheader">
-        <nav class="onlynav">
-            <p>Porfirio Glez Lpz</p>
+    <header>
+        <p>Porfirio González López</p>
+        <nav class="nav">
             <a href="https://github.com/P0RF1R10" target="_blank">GitHub</a>
-            <a href="" target="_blank">About Me</a>
             <a href="" target="_blank">LinkedIn</a>
             <a href="" target="_blank">Email</a>
+            <a href="" target="_blank">About Me</a>
         </nav>
     </header>
+
     <section class="skills">
         <p>Mis conococimientos son:</p>
         <ul>
