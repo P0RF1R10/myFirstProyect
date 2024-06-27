@@ -78,48 +78,63 @@
             flex-direction: row;
             justify-content: space-around;
         }
+        .languages div {
+            display: flex;
+            flex-direction: column;
+        }
 
         #formacion {
             display: flex;
             justify-content: center;
-            margin: 40px 0;
-            border: 1px solid white; 
+            margin: 50px 0 50px;
+            border: 1px solid white;
         }
         .formacion_contenedor {
             display: grid;
-            grid-template-columns: 60% 40%;
-            position: relative;
-            margin: 20px;
-            height: 80px;
-            
-        }
-        .formacion_contenedor .Platzi {
-            position: absolute; 
-            left: 240px;
-        }
-        .formacion_contenedor .Platzi img{
-            height: 50px;
+            grid-template-columns: 1fr 1fr; 
+            justify-items: center;
         }
         .formacion_contenedor .autodidacta {
-            position: absolute; 
-            right: 490px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 50%;
+            justify-content: space-between;
         }
-        .formacion_contenedor .autodidacta img{
+        .formacion_contenedor .Platzi {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #platzi {
+            width: 250px;
             height: 70px;
         }
+
+        #autodidacta {
+            width: 80px;
+            height: 90px;
+        }
+
         .title_proyects {
             border: 1px solid white;
             display: flex;
             justify-content: center;
+            margin: 50px 0 50px; 
         }
         .proyectos {
-            height: 70vh;
+            height: 80vh;
             background-color:rgb(2, 18, 18);
         }
 
         
         footer {
-            background: white;
+            background: #A2D9CE;
+            height: 40vh;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
         }
         .footer p{
             color: rgb(2, 8, 7);
@@ -181,8 +196,17 @@
             <h2>Inglés</h2>
             <img class="languages1" src="./items/languages/reino_unido.png" alt="Inglés">
         </div>
-    
+        
     </section>
+<!--
+    No puedo creerlo con el paso del tiempo. Solo será cuestión de quitar elementos de aquí y agregarlos arriba
+    = Sé este idioma. 
+        <li>Alemán</li>
+        <img class="languages1" src="./items/languages/alemania.png" alt="Alemán">
+        <li>Japones</li>
+        <img class="languages1" src="./items/languages/japón.png" alt="Japones">
+        <li>...</li>
+-->
 
 
 
@@ -191,13 +215,13 @@
     <section class="formacion_contenedor">
 
             <div class="Platzi">
+                <img src="./items/formacion/post-platzi.jpg" alt="Platzi" id="platzi">
                 <p>Platzi</p>
-                <img src="./items/formacion/post-platzi.jpg" alt="Platzi">
             </div>
 
             <div class="autodidacta">
-                <p>Autodidacta</p>
-                <img src="./items/formacion/autodidacta.png" alt="Autodidacta">
+                <h2>Autodidacta</h2>
+                <img src="./items/formacion/autodidacta.png" alt="Autodidacta" id="autodidacta">
             </div>
     </section>
 
@@ -210,20 +234,12 @@
     </section>
 
 
-<!--
-No puedo creerlo con el paso del tiempo. Solo será cuestión de quitar elementos de aquí y agregarlos arriba
-= Sé este idioma. 
-    <li>Alemán</li>
-    <img class="languages1" src="./items/languages/alemania.png" alt="Alemán">
-    <li>Japones</li>
-    <img class="languages1" src="./items/languages/japón.png" alt="Japones">
-    <li>...</li>
--->
 
     <footer class="footer">
         <p>Redes sociales?</p>
         <p>Terminos y Condiciones?</p>
         <p>Referencias?</p>
+        <p>...</p>
     </footer>
 </body>
 </html>
