@@ -6,33 +6,89 @@
     <title>Personal Web Page</title>
     <style>
         * {
-            margin: 0 auto;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
         }
         body {
-            background-color: rgb(180, 163, 163);
+            background-color: #455A64;
             color: #EAECEE;
         }
         .onlynav {
-            background-color: #EAECEE;
+            background-color: #546E7A;
         }
         header nav p {
             color:black;
         }
-        .questionfooter {
-            color: rgb(14, 230, 212);
+        .sobreMi_contenedor {
+            display: flex;
+            flex-direction: row;
+            justify-content: center; /*horizontal*/
         }
-        .skills ul img {
-            height: 30px;
-            width: 40px;
+        .PhotoMe {
+            width: 180px;
+            margin-left: 70px;
+        }
+        h2 {
+            margin: auto;
+        }
+        #Tecnologias {
+            display: flex;
+            justify-content: center;
+            margin: 25px;
+        }
+        .skills {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;  
+            margin: 0 40px;
+        }
+
+        .skills img {
+            height: 50px;
+            width: 50px;
         }
         .languages ul img {
             height: 24px;
             width: 40px;
         }
+        #formacion {
+            display: flex;
+            justify-content: center;
+            margin: 40px;
+        }
+        .formacion_contenedor {
+            display: grid;
+            grid-template-columns: 60% 40%;
+            position: relative;
+            margin: 20px;
+            height: 80px;
+            
+        }
+        .formacion_contenedor .Platzi {
+            position: absolute; 
+            left: 240px;
+        }
+        .formacion_contenedor .Platzi img{
+            height: 50px;
+        }
+        .formacion_contenedor .autodidacta {
+            position: absolute; 
+            right: 490px;
+        }
+        .formacion_contenedor .autodidacta img{
+            height: 70px;
+        }
+        .proyectos {
+            height: 70vh;
+            background-color:rgb(2, 18, 18);
+        }
         footer {
             background: white;
         }
-    </style>
+        .questionfooter {
+            color: rgb(14, 230, 212);
+        }
+        </style>
 </head>
 <body>
     <header class="onlyheader">
@@ -45,44 +101,62 @@
         </nav>
     </header>
 
-    <section class="sobreMi">
-        <img src="" alt="Me">
-        <p>¡Hola! Me llamo Porfirio Gonzalez <br>Tengo 23 años, soy originario de Oaxaca. <br>Mi habilidades actuales son enfocadas en el Frontend</p>
+    <section class="sobreMi_contenedor">
+        <img src="./FotoDePerfilCultura.jpg" alt="Me" class="PhotoMe">
+        <h2>¡Hola! Me llamo Porfirio Gonzalez <br>Tengo 23 años, soy originario de Oaxaca. <br>Mi habilidades actuales son enfocadas en el Frontend y en un futuro será IA & Cyberseguridad</h2>
     </section>
 
+    <h1 id="Tecnologias">Tecnologías que manejo:</h1>
     <section class="skills">
-        <p>Mis conococimientos son:</p>
-        <ul>
-            <li>HTML</li>
+        <div class="HTML">
+            <p>HTML</p>
             <img src="./items/habilidades/html.png" alt="HTML">
-            <li>CSS</li>
+        </div>
+        <div class="CSS">
+            <p>CSS</p>
             <img src="./items/habilidades/css.png" alt="CSS">
-            <li>JavaScript</li>
+        </div>
+        <div class="JavaScript">
+            <p>JavaScript</p>
             <img src="./items/habilidades/js.png" alt="JavaScript">
-            <li>Línea de Comandos</li>
+        </div>
+        <div class="Terminal">
+            <p>Línea de Comandos</p>
             <img src="./items/habilidades/terminal.png" alt="Terminal">
-            <li>Git</li>
+        </div>
+        <div class="Git">
+            <p>Git</p>
             <img src="./items/habilidades/git.png" alt="Git">
-            <li>GitHub</li>
+        </div>
+        <div class="GitHub">
+            <p>GitHub</p>
             <img src="./items/habilidades/github.png" alt="GitHub">
-        </ul>
+        </div>      
     </section>
 
-    <section class="Formación">
-        <p>Mi formación</p>
-        <ul>
-            <li>Platzi</li>
-            <li>Autodidacta</li>
-        </ul>
+    <h1 id="formacion">Formación</h1><!--No me convence el orden-->
+    <section class="formacion_contenedor">
+
+            <div class="Platzi">
+                <p>Platzi</p>
+                <img src="./items/formacion/post-platzi.jpg" alt="Platzi">
+            </div>
+
+            <div class="autodidacta">
+                <p>Autodidacta</p>
+                <img src="./items/formacion/autodidacta.png" alt="Autodidacta">
+            </div>
     </section>
 
+    <h1>Proyectos</h1>
     <section class="proyectos">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
     </section>
 
+    <h1>Idiomas</h1>
     <section class="languages">
         <span>Idiomas que domino</span>
         <ul>
@@ -98,6 +172,7 @@
         </ul>
     </section>
 
+    <h1>Nivel Actual de Inglés</h1>
     <section class="levelEnglish">
         <p>Mi nivel de inglés es:</p>
         <ul>
