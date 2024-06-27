@@ -9,6 +9,7 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
+        /*border: 1px solid white;*/
         }
         body {
             background-color: #455A64;
@@ -35,26 +36,54 @@
         #Tecnologias {
             display: flex;
             justify-content: center;
-            margin: 25px;
+            margin: 25px 0;
+            border: 1px solid #fbfbfb;
         }
         .skills {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;  
-            margin: 0 40px;
+            grid-template-columns: repeat(6, 1fr);
+            width: 100%;
+            margin: 50px 0;
+            justify-items: center; /*hor*/
+        }
+
+        .skills div {
+            display: flex;
+            flex-direction: column;
+            align-items: center; /*hor*/
         }
 
         .skills img {
-            height: 50px;
-            width: 50px;
+            height: 80px;
+            width: 90px;
         }
-        .languages ul img {
-            height: 24px;
-            width: 40px;
+
+        .Idiomas {
+            display: flex;
+            flex-direction: row;
+            height: 40px;
+            margin: 0;
+            border: 1px solid white;
+            justify-content: center;
+            width: 100%;
         }
+        span {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .languages {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+
         #formacion {
             display: flex;
             justify-content: center;
-            margin: 40px;
+            margin: 40px 0;
+            border: 1px solid white; 
         }
         .formacion_contenedor {
             display: grid;
@@ -78,17 +107,24 @@
         .formacion_contenedor .autodidacta img{
             height: 70px;
         }
+        .title_proyects {
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+        }
         .proyectos {
             height: 70vh;
             background-color:rgb(2, 18, 18);
         }
+
+        
         footer {
             background: white;
         }
-        .questionfooter {
-            color: rgb(14, 230, 212);
+        .footer p{
+            color: rgb(2, 8, 7);
         }
-        </style>
+    </style>
 </head>
 <body>
     <header class="onlyheader">
@@ -106,33 +142,50 @@
         <h2>¡Hola! Me llamo Porfirio Gonzalez <br>Tengo 23 años, soy originario de Oaxaca. <br>Mi habilidades actuales son enfocadas en el Frontend y en un futuro será IA & Cyberseguridad</h2>
     </section>
 
-    <h1 id="Tecnologias">Tecnologías que manejo:</h1>
+    <h1 id="Tecnologias">Tecnologías que manejo</h1>
     <section class="skills">
         <div class="HTML">
+            <img src="./items/habilidades/html.png" alt="HTML" class="img_skills_item">
             <p>HTML</p>
-            <img src="./items/habilidades/html.png" alt="HTML">
         </div>
         <div class="CSS">
+            <img src="./items/habilidades/css.png" alt="CSS" class="img_skills_item">
             <p>CSS</p>
-            <img src="./items/habilidades/css.png" alt="CSS">
         </div>
         <div class="JavaScript">
+            <img src="./items/habilidades/js.png" alt="JavaScript" class="img_skills_item">
             <p>JavaScript</p>
-            <img src="./items/habilidades/js.png" alt="JavaScript">
         </div>
         <div class="Terminal">
+            <img src="./items/habilidades/terminal.png" alt="Terminal" class="img_skills_item">
             <p>Línea de Comandos</p>
-            <img src="./items/habilidades/terminal.png" alt="Terminal">
         </div>
         <div class="Git">
+            <img src="./items/habilidades/git.png" alt="Git" class="img_skills_item">
             <p>Git</p>
-            <img src="./items/habilidades/git.png" alt="Git">
         </div>
         <div class="GitHub">
+            <img src="./items/habilidades/github.png" alt="GitHub" class="img_skills_item">
             <p>GitHub</p>
-            <img src="./items/habilidades/github.png" alt="GitHub">
         </div>      
     </section>
+
+    <h1 class="Idiomas">Idiomas</h1>
+    <span>Idiomas que domino</span>
+    <section class="languages">
+        <div>
+            <h2>Español</h2>
+            <img class="languages1" src="./items/languages/españa.png" alt="Español">
+        </div>
+        <div>
+            <h2>Inglés</h2>
+            <img class="languages1" src="./items/languages/reino_unido.png" alt="Inglés">
+        </div>
+    
+    </section>
+
+
+
 
     <h1 id="formacion">Formación</h1><!--No me convence el orden-->
     <section class="formacion_contenedor">
@@ -148,7 +201,7 @@
             </div>
     </section>
 
-    <h1>Proyectos</h1>
+    <h1 class="title_proyects">Proyectos</h1>
     <section class="proyectos">
         <div>1</div>
         <div>2</div>
@@ -156,35 +209,21 @@
         <div>4</div>
     </section>
 
-    <h1>Idiomas</h1>
-    <section class="languages">
-        <span>Idiomas que domino</span>
-        <ul>
-            <li>Español</li>
-            <img class="languages1" src="./items/languages/españa.png" alt="Español">
-            <li>Inglés</li>
-            <img class="languages1" src="./items/languages/reino_unido.png" alt="Inglés">
-            <li>Alemán</li>
-            <img class="languages1" src="./items/languages/alemania.png" alt="Alemán">
-            <li>Japones</li>
-            <img class="languages1" src="./items/languages/japón.png" alt="Japones">
-            <li>...</li>
-        </ul>
-    </section>
 
-    <h1>Nivel Actual de Inglés</h1>
-    <section class="levelEnglish">
-        <p>Mi nivel de inglés es:</p>
-        <ul>
-            <li>Reading: B1</li>
-            <li>Listenig: A2</li>
-            <li>Writing: A1</li>
-            <li>Speaking: A1</li>
-        </ul>
-    </section>
+<!--
+No puedo creerlo con el paso del tiempo. Solo será cuestión de quitar elementos de aquí y agregarlos arriba
+= Sé este idioma. 
+    <li>Alemán</li>
+    <img class="languages1" src="./items/languages/alemania.png" alt="Alemán">
+    <li>Japones</li>
+    <img class="languages1" src="./items/languages/japón.png" alt="Japones">
+    <li>...</li>
+-->
 
-    <footer class="onlyfooter">
-        <p class="questionfooter">Aquí va información como menos importante?</p>
+    <footer class="footer">
+        <p>Redes sociales?</p>
+        <p>Terminos y Condiciones?</p>
+        <p>Referencias?</p>
     </footer>
 </body>
 </html>
